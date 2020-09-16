@@ -134,7 +134,14 @@ define([], function() {
                     FixedWidth: {
                         ref: "vars.FixedWidth",
                         expression: "optional",
-                        translation: "custom inline-style ex:(width:42%)",
+                        translation: "Custom CSS for cell inline-style",
+                        type: "string",
+                        defaultValue: ""
+                    },
+                    CustomRow: {
+                        ref: "vars.CustomRow",
+                        expression: "optional",
+                        translation: "Custom CSS for row inline-style",
                         type: "string",
                         defaultValue: ""
                     },
