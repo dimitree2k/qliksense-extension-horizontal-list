@@ -8,5 +8,8 @@ The extension is tested in version April 2018 - November 2018.
 
 Tested in september 2020 version
 
+### Tip
+Add ```display:block``` to the new input field **Custom CSS for row inline-style** and scrollbar will show.
+
 ## Screenshot
 ![screenshoot](./qlik_horizontal_list.png)
