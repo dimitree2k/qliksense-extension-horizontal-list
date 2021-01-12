@@ -10,7 +10,7 @@ define([], function() {
                 type: "string",
                 ref: "qListObjectDef.qDef.qFieldLabels.0",
                 label: "Label",
-                show: true
+                show: false
             },
             libraryId: {
                 type: "string",
