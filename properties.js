@@ -6,12 +6,52 @@ define([], function() {
         label: "Dimensions",
         ref: "qListObjectDef",
         items: {
+            showLabel: {
+                ref: "qListObjectDef.qDef.qFieldShowLabel",
+                translation: "Show Label",
+                type: "boolean",
+                component: "switch",
+                defaultValue: false,
+                options: [{
+                    value: true,
+                    label: "On"
+                }, {
+                    value: false,
+                    label: "Off"
+                }],
+                show: true
+            },
             label: {
                 type: "string",
                 ref: "qListObjectDef.qDef.qFieldLabels.0",
                 label: "Label",
-                show: false
+                show: function (e) {
+                    return e.qListObjectDef.qDef.qFieldShowLabel
+                }
             },
+            labelPos: {
+                ref: "qListObjectDef.qDef.qFieldLabelPos",
+                expression: "optional",
+                translation: "Label Position",
+                type: "string",
+                defaultValue: "text-align:left",
+                component: "dropdown",
+                options: [{
+                    value: "text-align:left !important;",
+                    label: "left"
+                }, {
+                    value: "text-align:center !important;",
+                    label: "center"
+                }, {
+                    value: "text-align:right !important;",
+                    label: "right"
+                }],
+                show: function (e) {
+                    return e.qListObjectDef.qDef.qFieldShowLabel
+                }
+            },
+
+
             libraryId: {
                 type: "string",
                 component: "library-item",
@@ -171,7 +211,6 @@ define([], function() {
                         expression: "optional",
                         translation: "Label Align",
                         type: "string",
-                        defaultValue: "text-align:center;",
                         component: "dropdown",
                         options: [{
                             value: "text-align:left;",
