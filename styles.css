@@ -25,6 +25,7 @@
   border: 1px solid #ddd;
   margin-left: -1px;
   margin-bottom: -1px;
+  white-space: nowrap;
 }
 .ext-horizontal-listbox li.S {
   border-color: #fff;
@@ -60,22 +61,26 @@
   color: #fff;
 }
 .ext-horizontal-listbox li.li-large {
-  padding: 10px 16px;
+  padding: 10px 2px;
+  flex-basis: 64px;
   font-size: 18px;
   line-height: 1.3333333;
 }
 .ext-horizontal-listbox li.li-medium {
-  padding: 6px 12px;
+  padding: 6px 2px;
+  flex-basis: 50px;
   font-size: 14px;
   line-height: 1.42857143;
 }
 .ext-horizontal-listbox li.li-small {
-  padding: 5px 10px;
+  padding: 5px 2px;
+  flex-basis: 40px;
   font-size: 12px;
   line-height: 1.5;
 }
 .ext-horizontal-listbox li.li-mini {
-  padding: 1px 5px;
+  padding: 1px 1px;
+  flex-basis: 1px;
   font-size: 12px;
   line-height: 1.5;
 }
