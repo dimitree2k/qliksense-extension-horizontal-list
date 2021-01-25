@@ -188,7 +188,7 @@ define([], function() {
                     fieldSize: {
                         ref: "vars.FieldSize",
                         expression: "optional",
-                        translation: "Field Size:",
+                        translation: "Cell Size:",
                         type: "string",
                         defaultValue: "li-medium",
                         component: "dropdown",
@@ -209,8 +209,9 @@ define([], function() {
                     LabelAlign: {
                         ref: "vars.LabelAlign",
                         expression: "optional",
-                        translation: "Label Align",
+                        translation: "Cell Value Align",
                         type: "string",
+                        defaultValue: "text-align:center;",
                         component: "dropdown",
                         options: [{
                             value: "text-align:left;",
