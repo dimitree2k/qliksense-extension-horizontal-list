@@ -9,7 +9,7 @@ The extension is tested in version April 2018 - November 2018.
 Tested in september 2020 version
 
 ### Tip
-Add ```display:block``` to the new input field **Custom CSS for row inline-style** and scrollbar will show.
+Add ```flex:1;``` to the input field **Custom CSS for cell inline-style** and all values will stretch to one single row.
 
 ## Screenshot
 ![screenshoot](./qlik_horizontal_list.png)
