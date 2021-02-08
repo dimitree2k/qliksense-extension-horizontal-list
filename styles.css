@@ -29,7 +29,7 @@
 }
 .ext-horizontal-listbox li.S {
   border-color: #fff;
-  background-color: #52cc52;
+  background-color: #009845;
   color: #fff;
 }
 .ext-horizontal-listbox li.A {
@@ -45,7 +45,7 @@
 }
 .ext-horizontal-listbox li.L {
   border-color: #fff;
-  background-color: #52cc52;
+  background-color: #009845;
   pointer-events: none;
   color: #fff;
 }
